@@ -136,6 +136,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(len(data['questions']), len(Question.query.order_by(
             Question.id).filter(Question.question.ilike(
                 '%{}%'.format('title'))).all()))
+        self.assertNotEqual(len(res.json["questions"]), 0)
 
     def test_get_quizzes(self):
         res = self.client().post('/quizzes',
@@ -147,6 +148,7 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(res.status_code, 200)
         self.assertTrue(data['question'])
         self.assertEqual(data['question']['category'], 1)
+        self.assertNotEqual(len(res.json["question"]), 0)
 
 
 # Make the tests conveniently executable
