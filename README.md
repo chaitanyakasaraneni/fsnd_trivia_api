@@ -18,8 +18,8 @@ Completing this trivia app will give you the ability to structure plan, implemen
 
 There are `TODO` comments throughout project. Start by reading the READMEs in:
 
-1. [`./starter/frontend/`](./starter/frontend/README.md)
-2. [`./starter/backend/`](./starter/backend/README.md)
+1. [`./frontend/`](./frontend/README.md)
+2. [`./backend/`](./backend/README.md)
 
 We recommend following the instructions in those files in order. This order will look familiar from our prior work in the course.
 
@@ -41,4 +41,4 @@ The `./starter/frontend` directory contains a complete React frontend to consume
 
 Pay special attention to what data the frontend is expecting from each API response to help guide how you format your API. 
 
-[View the README.md within ./frontend for more details.](./starter/frontend/README.md)
+[View the README.md within ./frontend for more details.](./frontend/README.md)
